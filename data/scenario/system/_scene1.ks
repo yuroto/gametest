@@ -1,0 +1,7 @@
+[preload  storage="./data/bgimage/black.png"  ]
+[preload  storage="./data/fgimage/default/1-1.gif"  ]
+[preload  storage="./data/bgimage/imagemap2.png"  ]
+[preload  storage="./data/fgimage/chara/1/nasi2.png"  ]
+[preload  storage="./data/bgimage/sea.png"  ]
+[preload  storage="./data/fgimage/chara/1/nasi.png"  ]
+[return]
