@@ -1,3 +1,4 @@
-[eval exp="f._system_preview_ks='title_screen.ks'"] 
-[preload  storage="./data/bgimage/title.jpg"  ]
+[hidemenubutton] 
+[eval exp="f._system_preview_ks='scene1.ks'"] 
+[preload  storage="./data/bgimage/B_.gif"  ]
 [return] 

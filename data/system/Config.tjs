@@ -74,12 +74,12 @@
 ;defaultFontSize=28
 ;defaultLineSpacing=8
 ;defaultPitch=0
-;userFace=monospace
-;defaultChColor=#ffffff
+;userFace=Quicksand, 游ゴシック体, Yu Gothic, YuGothic, ヒラギノ角ゴシック Pro, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, sans-serif, Arial
+;defaultChColor=0xffffff
 ;defaultBold=false
 ;defaultRubySize=10
 ;defaultRubyOffset=-2
-;defaultAntialiased=0
+;defaultAntialiased=1
 ;defaultShadow=false
 ;defaultShadowColor=0x000000
 ;defaultEdge=false

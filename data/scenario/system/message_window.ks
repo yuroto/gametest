@@ -4,10 +4,10 @@
 
 
 		
-			[position page=fore margint=45 marginl=10 marginr=20 marginb=10 vertical=false opacity="100" radius="30" color="0x000000" ]
+			[position page=fore margint=45 marginl=10 marginr=20 marginb=10 vertical=false opacity="180" radius="0" color="0x000000" ]
 		
 
-		[ptext name="chara_name_area" layer="message0" color=0xFFFFFF size=26 x=30 y=566 bold="bold" edge="undefined" shadow="undefined"]
+		[ptext name="chara_name_area" layer="message0" color=0xFFFFFF size=26 x=30 y=566 bold="bold" edge="" shadow=""]
 
 		;キャラクターの表示モードに関する定義
 		[chara_config ptext="chara_name_area" pos_mode=true time="600" memory="false" anim="true" effect="easeInQuad" pos_change_time="600" ]
@@ -29,7 +29,7 @@
 		;[position layer="message1" page=fore margint="15" marginl="20" marginr="20" marginb="20"]
 
 		[position layer="message1" width=600 height=316 top=556 left=20 ]
-		[position layer="message1" page=fore margint=5 marginl=10 marginr=10 marginb=10 vertical=false opacity="100" radius="30" color="0x000000" ]
+		[position layer="message1" page=fore margint=5 marginl=10 marginr=10 marginb=10 vertical=false opacity="180" radius="0" color="0x000000" ]
 
 		;glink_configの設定
 		[glink_config auto_place_force="" width="" height="" show_time="" select_time="" reject_time=""]
