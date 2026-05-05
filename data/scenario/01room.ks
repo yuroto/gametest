@@ -51,7 +51,7 @@
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 @wait time=1000
 
-
+@bg storage="black.png"  time=2000
 
 [stopbgm]
 [playbgm storage="op.mp3" loop=false] 
