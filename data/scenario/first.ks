@@ -21,7 +21,7 @@
 
 
 
-[jump storage=15takibit.ks]
+[jump storage=.01room.ks]
 
 
 
