@@ -3,10 +3,17 @@
 *back
 @bg storage="02_.gif"  time=2000
 
-
+ 
 
 
 *start
+[clearfix name=screen]
+[clearfix name=screen][layopt layer="message0" visible="false"] 
+[layopt layer="1" visible="true" ]
+[image name="memo" layer="1" x="530" y="860" storage="../others/memoc.png"]
+[clickable  storage="02roji.ks"  x="530"  y="860" height="80" width="80" target="*memo" ]
+
+ 
 
 
 [clickable  storage="02roji.ks"  x="184"  y="75" height="113" width="276" target="*plane" ]
@@ -14,117 +21,164 @@
 [clickable  storage="02roji.ks"  x="518"  y="245" height="60" width="84" target="*fuku" ]
 [clickable  storage="02roji.ks"  x="432"  y="303" height="69" width="60" target="*sitsu" ]
 [clickable  storage="02roji.ks"  x="342"  y="435" height="139" width="81" target="*machi" ]
-[clickable  storage="02roji.ks"  x="341"  y="571" height="44" width="56" target="*hole" ]
+[clickable  storage="02roji.ks"  x="528"  y="317" height="470" width="136" target="*hei" ]
 [clickable  storage="02roji.ks"  x="462"  y="574" height="95" width="64" target="*kokia" ]
-[clickable  storage="02roji.ks"  x="390"  y="673" height="59" width="90" target="*hole2" ]
+
 [clickable  storage="02roji.ks"  x="252"  y="674" height="67" width="130" target="*mizu" ]
 [clickable  storage="02roji.ks"  x="497"  y="704" height="60" width="64" target="*kokia2" ]
 [clickable  storage="02roji.ks"  x="69"  y="814" height="84" width="92" target="*shicko" ]
-[clickable  storage="02roji.ks"  x="139"  y="352" height="209" width="174" target="*akichi" ]
+[clickable  storage="02roji.ks"  x="139"  y="352" height="300" width="174" target="*akichi" ]
 [s]
 
 *plane
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-
-めちゃくちゃ近くを飛んでないか...？[p]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+かなりていくうひこうにみえる[p]
 いや[p]
-……[p]
 でかいだけか[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
+
+[clearfix name=screen]
+[layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 *ad
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+なにかはってある[p]
+よくみえない[p]
 
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
+[clearfix name=screen]
+[layopt layer="message0" visible="false"] 
+
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *fuku
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+せんたくものがかぜでゆれている[p]
 
-[p]
+[clearfix name=screen]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
-*sitsu
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *machi
-[stopbgm]
-@bg storage="black.png"  time=2000
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+
+しょうてんがいにいく？[p]
+
+
+[link target=*machiiku]【はい】[endlink][r][r]
+[link target=*start]【いいえ】[endlink][r]
+[s]
+
+
+*machiiku
+[clearfix name=screen]
+[clearfix name=screen][layopt layer="message0" visible="false"] 
+[stopbgm][freeimage layer="1"]
+
 [jump  storage="04syoutengai.ks"    ]
 
 
 
-*hole
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+*hei
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
+ランダムなかたちのいしがぴったりとつみあげられている[p][clearfix name=screen]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *kokia
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
+うえられたコキア[p][clearfix name=screen]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
-*hole2
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *kokia2
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
+はえているコキア[p][clearfix name=screen]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *mizu
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
+あめがあがってよかった[p][clearfix name=screen]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *shicko
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[p]
+いぬたちのおきにいりスポット[p][clearfix name=screen]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="02roji.ks"  target="*start"  ]
 
 
 
 *akichi
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+
+あきちのようすをみる？[p]
+
+[link target=*akichiiku]【はい】[endlink][r][r]
+[link target=*start]【いいえ】[endlink][r]
+[s]
+*akichiiku
+[clearfix name=screen]
+[clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="03akichi.ks"   ]
 
 
+*memo
+[clearfix name=screen][clearfix name=screen][freeimage layer="1"]
+[layopt layer="message0" visible="false"] 
+[filter layer="base" blur="3" saturate="90"]
+[layopt layer="1" visible="true" ]
+[image layer="1" x="0" y="0" storage="../others/map.png"]
+
+[p][freeimage layer="1"]
+[filter layer="base" blur="0" saturate="90"]
+[jump target="*start"  ]
 
 
 

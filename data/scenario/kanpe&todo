@@ -1,0 +1,41 @@
+移動を以下のテンプレートにおきかえる。
+
+*out
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+
+___にいく？[p]
+[link target=*iku]【はい】[endlink][r][r]
+[link target=*start]【いいえ】[endlink][r]
+[s]
+
+*iku
+[clearfix name=screen][clearfix name=screen][layopt layer="message0" visible="false"] 
+[stopbgm]
+[freeimage layer="1"]
+
+[jump  storage="___.ks"    ]
+
+startに
+[clearfix name=screen][layopt layer="message0" visible="false"]
+をついかする
+
+if文
+[if exp="f.==1"] 
+
+[else] 
+
+[endif]
+
+
+[eval exp="f.fune =1"  ]
+
+
+やること
+ 
+ばすていはぼうふらを鳴らす
+
+わがしやのえ、かきなおしたのでさしかえる
+はしのしたのかばしら
+ドラム缶のなかみをかく
+
+コンクリ饅頭をかったら選択肢からほかにはないが消えるようにする

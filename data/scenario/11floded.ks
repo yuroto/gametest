@@ -1,9 +1,18 @@
 
 [bgmopt volume=20]
-@bg storage="11.png"  time=2000
+@bg storage="11_.jpg"  time=2000
 
 
 *start
+[clearfix name=screen][layopt layer="message0" visible="false"]
+
+
+[layopt layer="1" visible="true" ]
+[image name="memo" layer="1" x="30" y="770" storage="../others/memoc.png"]
+[image name="back" layer="1" x="30" y="860" height="80" width=80" storage="../others/backw.png"]
+[clickable   x="30"  y="770" height="80" width="80" target="*memo" ]
+[clickable    x="30"  y="860" height="80" width="80" target="*out" ]
+
 [clickable  x="433"  y="0"  width="148"  height="160"  target="*cable"  _clickable_img=""  ]
 [clickable  x="495"  y="281"  width="100"  height="69"  target="*sakana"  _clickable_img=""  ]
 [clickable  x="435"  y="338"  width="203"  height="163"  target="*iwa"  _clickable_img=""  ]
@@ -15,90 +24,140 @@
 [clickable  x="519"  y="504"  width="118"  height="90"  target="*kataduke"  _clickable_img=""  ]
 [clickable  x="2"  y="510"  width="430"  height="100"  target="*mizu"  _clickable_img=""  ]
 [clickable  x="509"  y="835"  width="125"  height="201"  target="*hon"  _clickable_img=""  ]
-[clickable  x="10"  y="816"  width="256"  height="164"  target="*out"  _clickable_img=""  ]
+
 
 [s]
 *cable
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+しょうめいのケーブルですね[p]
+たまにはほこりをそうじしたいんですけどね[p]
+とどきませんね[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 
 *sakana
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[if exp="f.eiga==1"] 
+これまでにみたえいがのベスト３０００をつくって、いんさつやにほんにさせましたね[p]
+ずいぶんまえのはなしです[p]
+もうぜんぶうれてしまいました[p]
+[else] 
+「そこのみにてひかりかがやく」っていうのは、どういういみなんでしょうね[p]
+わたしなんかはあまり、がくがないからわからないんですね[p]
+おきゃくさんはがくがあるようだから、いろいろおしえてほしい[p]
+えいがはおすきですか？[p]
+むかしはえいがかんがたくさんありまして、とおくまでいってみたりしたものです[p]
+しゅうでんをのがしてしまったときには、すなはまでよをあかしたこともありましたね[p]
+さむくてね、すなにうまってやりすごしたものですよ[p]
+いまではえいがかんもありませんからね[p]
+みなさんどうしてるんでしょうか？[p]
+むかしはこのモールにもえいがかんがありましてね[p]
+みせのそとにあるかいだんからにかいにあがると、ロビーまではいけますよ[p]
+
+[eval exp="f.eiga =1"  ]
+[endif]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
+
+
+
+
+
 
 *iwa
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+このいわをかってもうなんねんになりますかね[p]
+いわはいっしょうつかいますからね、いいいわをかうべきですよ[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *straght
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+それはながいながいみちのりをたびしてかぞくにあいにいくえいがです[p]
+さかみちをころがりおちているシーンがありましたね[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *lost
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+じぶんがじぶんでなくなるというのは、どういうことなんでしょう[p]
+そうなったときには、あたらしいじぶんになってるわけですから、むかしのじぶんとはちがうということに、きがつくのでしょうか[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *mal
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+これはゆめについてのえいがだったとおもいます[p]
+ゆめしんだんっていうのは、あたるんですかね[p]
+わたしなんか、このまえきたおきゃくさんにゆめのはなしをしてたら、きんうんがすごいなんていわれちゃいましてね[p]
+もうおかねなんてもってても、しかたがないんですけどね[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *inland
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+これはゆうれいについてのえいがでしたね[p]
+ゆうれいっていうのは、いるんですかね[p]
+このしょうばいをしていると、いろんなおきゃくさんがいます[p]
+このひとはほんとにこのよのもんかな、なんて、おもいますねときどき[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *regi
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+レジはもうさいきんはつかってないですね[p]
+むかしはよくつかってましたよ[p]
+レシートもひつようだったし[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *kataduke
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+それはわたしのちゅうしょくのおさらです[p]
+あとでかたづけますから、おいておいてください[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *mizu
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+むかしはみずなんてきてなかったんですがね[p]
+わたしにはこっちのほうがいいですね、じっさい[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 *hon
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[jump   target="*start"  ]
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+あねのかいたえをしまってるんですね[p]
+わたしのほうがえはうまいんですけどね、ぜんぶすてちゃいましたよ[p]
+おもしろくもないですからね[p]
+[clearfix name=screen][layopt layer="message0" visible="false"] [jump target="*start"  ]
 
 
 
 
 *out
+[freeimage layer="1"][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
+みせをでる？[p]
+[link target=*iku]【はい】[endlink][r][r]
+[link target=*start]【いいえ】[endlink][r]
+[s]
+
+*iku
+[clearfix name=screen][clearfix name=screen][layopt layer="message0" visible="false"] 
+
+[freeimage layer="1"]
 [jump storage="14mizu.ks" target=back] 
+
+*memo
+[clearfix name=screen][freeimage layer="1"]
+[layopt layer="message0" visible="false"] 
+[filter layer="base" blur="3" saturate="90"]
+[layopt layer="1" visible="true" ]
+[image layer="1" x="0" y="0" storage="../others/map.png"]
+
+[p][freeimage layer="1"]
+[filter layer="base" blur="0" saturate="90"]
+[jump target="*start"]

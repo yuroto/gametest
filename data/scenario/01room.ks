@@ -1,25 +1,31 @@
 [playbgm storage="alarm.m4a" ] 
 @wait time=2000
 
-[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0][layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+
+
 
 ......[p]
 ......[p]
 [layopt layer="message0" visible="false"] [clearfix name=screen]
 
-@wait time=2000
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
 [button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+
 ......[p]
-仕事にいかなくちゃ[p]
+しごとにいかなくちゃ[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 
 @wait time=2000
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
 ......いや[p]
-休みを取ったんだった[p]
-わざわざ[p]
+きょうはやすみをとったんだった[p]
 [layopt layer="message0" visible="false"] [clearfix name=screen]
 
 
@@ -32,34 +38,17 @@
 
 *stop
 [stopbgm] 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-タイマーを止めた[p]
+アラームをとめた[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [playbgm storage="rain.mp3" ] 
 
 
 *start
-[if exp="f.phone && f.light && f.window&& f.furo ==1"] 
-@wait time=4000
-[jump  storage="01room.ks"  target="*out"  ]
-*out
-
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-
-そろそろいくか[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
-@wait time=1000
-
-@bg storage="black.png"  time=2000
-
-[stopbgm]
-[playbgm storage="op.mp3" loop=false] 
-[wbgm]
-[jump  storage="02roji.ks"]
-
-[else] 
-[endif]
 
 [clickable x="180" y="895" height="284" width="134 " target="*phone"]
 [clickable x="269" y="3" height="98" width="166" target="*light"]
@@ -72,120 +61,130 @@
 [clickable x="563" y="245" height="390" width="65" target="*furo"]
 [clickable x="1" y="420" height="58" width="65" target="*coffe"]
 [clickable x="49" y="668" height="117" width="135" target="*book"]
+[clickable x="447" y="465" height="72" width="83" target="*door"]
 
 
 [s]
 
 *phone
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-仕事のアラームで起きてしまった[p]
-こんなに早く起きる必要ないけど…[p]
-いいか[p]
+げんざいのじこくは7:03だ[p]
+
 [clearfix name=screen][layopt layer="message0" visible="false"] 
-[eval exp="f.phone =1"  ]
 [jump  storage="01room.ks"  target="*start"  ]
 
 *light
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-明かりが切れている[p]
-[eval exp="f.light =1"  ]
+でんきゅうがきれたままだ[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
-*window
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-窓から光が差している[p]
-[eval exp="f.window =1"  ]
+*window
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+
+まどからひかりがさしている[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 
 *floor
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-窓からさした光が床をてらしている[p]
-[eval exp="f.floor =1"  ]
+まどからさしたひかりがゆかをてらしている[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 *pot
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-昨日のみそしる[p]
-なすと油揚げ[p]
-[eval exp="f.pot =1"  ]
+なべにはきのうのみそしるがのこっている[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 *gomi
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-昨日ごみ出し忘れた[p]
-[eval exp="f.gomi =1"  ]
+だしわすれたごみ[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 *kasa
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-お気に入りのかさ[p]
-[eval exp="f.kasa =1"  ]
+けさはあめがやむよほうだったけど[p]
+かさがいるかな？[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 *fuku
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-洗濯ものがたまってる[p]
-洗わなくちゃだけど、今日はいいや[p]
-[eval exp="f.fuku =1"  ]
+せんたくずみのようふく[p]
+たたむのめんどくさいな[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
+
 *furo
-[if exp="f.furo ==1"] 
 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-もうさっきはいった[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-@wait time=1000
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-[else] 
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-
-シャワーを浴びよう[p]
-[eval exp="f.furo =1"  ]
+シャワーはきのうはいった[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
-@bg storage="black.png"  time=2000
-@wait time=5000
-@bg storage="01_.jpg"  time=2000
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
-ふう[p]
-さっぱりした[p]
-[clearfix name=screen][layopt layer="message0" visible="false"] 
-[endif]
 [jump  storage="01room.ks"  target="*start"  ]
 
 
 
 *coffe
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-昨日淹れたコーヒー[p]
-[eval exp="f.coffe =1"  ]
+コップにはのみかけのコーヒーがはいっている[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 
 *book
-[layopt layer=message0 page=fore visible=true][button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
-まだ読んでいない本[p]
-[eval exp="f.book =1"  ]
+よんでいないほんのやま[p]
 [clearfix name=screen][layopt layer="message0" visible="false"] 
 [jump  storage="01room.ks"  target="*start"  ]
 
+*door
+[freeimage layer="1"]
+[layopt layer=message0 page=fore visible=true]
+[button name="screen" graphic="../others/size.png" x=560 y=710 role=fullscreen visible=true layer=message0]
 
+そろそろでかける？[p]
+[link target=*out]【はい】[endlink][r][r]
+[link target=*start]【いいえ】[endlink][r]
+[s]
 
+*out
+[clearfix name=screen][layopt layer="message0" visible="false"] 
+[stopbgm]
+@bg storage="../bgimage/black.png"  time=2000
+@bg storage="../bgimage/white.png"  time=10000 wait=false
+[movie storage="../video/OP.mp4"]
 
-
-
-
+[jump  storage="02roji.ks"    ]
 
 
 

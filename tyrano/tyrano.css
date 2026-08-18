@@ -61,6 +61,7 @@ body {
 /* クリック待ちグリフ */
 .img_next {
     padding-left: 3px;
+  vertical-align: -4px;
 }
 
 .chara_part_container {
@@ -547,6 +548,7 @@ div.img_next {
     margin-left: 3px;
     display: inline-block;
     vertical-align: baseline;
+
 }
 
 /*------ 図形 ------*/
