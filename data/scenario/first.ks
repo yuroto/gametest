@@ -21,7 +21,7 @@
 
 
 
-[jump storage=.01room.ks]
+[jump  storage="01room.ks"    ]
 
 
 
